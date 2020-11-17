@@ -4,7 +4,7 @@
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <a class="navbar-item" href="#">
-          <img src="/assets/l4vr0v-beachball.png" width="30" height="30" >
+          <img src="./assets/l4vr0v-beachball.png" width="30" height="30" >
         </a>
       </div>
    </nav>
