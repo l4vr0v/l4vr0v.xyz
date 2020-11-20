@@ -16,7 +16,7 @@
                 <div class="content">
                     <p>{{snippet}}</p>
                     <p>{{tags}}</p>
-                    <a href="{{link}}" class="button is-fullwidth">Project Link</a>
+                    <a :href="link" class="button is-fullwidth">Project Link</a>
                 </div>
             </div>
         </div>
