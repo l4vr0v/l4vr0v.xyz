@@ -9,14 +9,14 @@
         </div>
     </section>
     <section class="section">
-        <div class="container is-fluid">
-            <div class="columns is-multiline">
-                <div class="column is-one-third" v-for="project in projects">
-                    <project-card v-bind="project"></project-card>
-                </div>
-            </div>
-        </div>
-    </section>
+		<div class="container is-fluid">
+			<div class="columns is-multiline">
+				<div class="column is-one-third" v-for="(project, idx) in projects" :key="idx">
+					<project-card v-bind="project"></project-card>
+				</div>
+			</div>
+		</div>
+	</section>
   </div>
 </template>
 
@@ -26,7 +26,7 @@
     export default {
         name: "home",
         components: {
-            PostCard
+            ProjectCard
         },
         data() {
             return{
@@ -58,7 +58,7 @@
                             snippet: self.airtableResponse[i].fields.Body,
                             image: self.airtableResponse[i].fields.Image[0].url,
                             date: self.airtableResponse[i].fields["Last Release"],
-                            tags: self.airtableResponse[i].fields.Tags,
+                            tags: self.airtableResponse[i].fields.Tags.toString(),
                             link: self.airtableResponse[i].fields.Link
                         }
                         projectList.push(project)
