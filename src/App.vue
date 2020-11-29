@@ -12,7 +12,12 @@
    <footer class="footer">
     <div class="content has-text-centered">
       <p>
-        Made by l4vr0v with help from <a href="https://airtable.com/">Airtable</a>, <a href="https://bulma.io">Bulma</a>, and <a href="https://vuejs.org">Vue</a>.
+        Made by l4vr0v. Powered by <a href="https://airtable.com/">Airtable</a>,
+        <a href="https://bulma.io">Bulma</a>, and
+        <a href="https://vuejs.org">Vue</a>.
+        Thanks to <a
+          href="https://dev.to/markjohnson303/building-a-portfolio-site-with-vue-bulma-and-airtable-5a58"
+        >Mark Johnson</a>.
       </p>
     </div>
   </footer>
